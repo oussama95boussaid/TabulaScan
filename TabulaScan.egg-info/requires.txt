@@ -1,0 +1,9 @@
+numpy
+pandas
+opencv-python
+ultralyticsplus==0.0.23
+ultralytics==8.0.21
+paddlepaddle
+paddleocr
+tensorflow
+Pillow

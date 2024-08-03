@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+TabulaScan/__init__.py
+TabulaScan.egg-info/PKG-INFO
+TabulaScan.egg-info/SOURCES.txt
+TabulaScan.egg-info/dependency_links.txt
+TabulaScan.egg-info/requires.txt
+TabulaScan.egg-info/top_level.txt
