@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="TabulaScan",
-    version="0.1.0",  
+    version="0.2.0",  
     author="Oussama Boussaid",
     author_email="oussama.bouss3id95@gmail.com",
     description="Streamlined Scanned Image Table Extraction and Excel Conversion",

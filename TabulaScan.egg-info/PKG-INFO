@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: TabulaScan
-Version: 0.1.0
+Version: 0.2.0
 Summary: Streamlined Scanned Image Table Extraction and Excel Conversion
 Home-page: https://github.com/oussama95boussaid/TabulaScan
 Author: Oussama Boussaid
@@ -34,34 +34,38 @@ enabling seamless integration into your data management processes.
 **Output to Excel** : Convert recognized tables into Excel files, preserving data structure and format.
 
 
-# Getting Started :
-These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+## Installation
 
-# Prerequisites :
+To install TabulaScan, you can use pip:
 
-To run this project, you'll need:
+```bash
+pip install TabulaScan
+```
 
-    - paddleocr
-    - ultralyticsplus (version 0.0.23)
-    - ultralytics (version 8.0.21)
-    - opencv2
-    - pandas
-    - csv
-    - tensorflow
-    - PIL
+## Usage
+Hereâ€™s a simple example demonstrating how to use TabulaScan to convert an image of a table into an Excel file and then read it using Pandas:
 
-# Install the required libraries :
+```bash
+import TabulaScan as ts
+import cv2
+import pandas as pd
 
-    !pip install paddlepaddle
-    !pip install paddleocr
-    !pip install pytesseract transformers ultralyticsplus==0.0.23 ultralytics==8.0.21
+# Load your image
+img_path = 'path_to_your_image.jpg'
+anaylise = cv2.imread(img_path)
 
-**If you are using Google Colab Add (Optional)**
+# Convert the image table to an Excel table
+result = ts.ImgTable2ExcelTable(anaylise)
 
-    !wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
-    !sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+# Load the resulting Excel file into a Pandas DataFrame
+excel_table = pd.read_excel(result)
 
+# Display the extracted table (the table is auto downloaded)
+excel_table
+```
 
-# Run the algorithm:
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request on GitHub.
 
-    python TabulaScan.py
+## Support
+If you encounter any issues or have any questions, please feel free to open an issue on the GitHub repository.
