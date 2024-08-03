@@ -20,17 +20,6 @@ enabling seamless integration into your data management processes.
 **Output to Excel** : Convert recognized tables into Excel files, preserving data structure and format.
 
 
-# TabulaScan
-
-**TabulaScan** is a powerful Python tool designed to detect, recognize, and extract tables from scanned images, transforming them into Excel files with high accuracy and efficiency. This tool automates the tedious process of converting paper-based tables into structured, editable Excel files, enabling seamless integration into your data management workflows.
-
-## Features
-
-- **Table Detection**: Utilizes advanced deep learning models to accurately detect tables within images.
-- **OCR**: Leverages PaddleOCR to extract text from detected tables.
-- **Excel Conversion**: Converts extracted table data into Excel format for easy editing and analysis.
-- **User-friendly Interface**: Deployed using Gradio for a simple and interactive user experience.
-
 ## Installation
 
 To install TabulaScan, you can use pip:
