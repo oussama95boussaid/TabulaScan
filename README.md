@@ -49,5 +49,10 @@ excel_table = pd.read_excel(result)
 
 # Display the extracted table (the table is auto downloaded)
 excel_table
+```
 
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request on GitHub.
 
+## Support
+If you encounter any issues or have any questions, please feel free to open an issue on the GitHub repository.
