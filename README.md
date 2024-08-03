@@ -20,34 +20,21 @@ enabling seamless integration into your data management processes.
 **Output to Excel** : Convert recognized tables into Excel files, preserving data structure and format.
 
 
-# Getting Started :
-These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+# TabulaScan
 
-# Prerequisites :
+**TabulaScan** is a powerful Python tool designed to detect, recognize, and extract tables from scanned images, transforming them into Excel files with high accuracy and efficiency. This tool automates the tedious process of converting paper-based tables into structured, editable Excel files, enabling seamless integration into your data management workflows.
 
-To run this project, you'll need:
+## Features
 
-    - paddleocr
-    - ultralyticsplus (version 0.0.23)
-    - ultralytics (version 8.0.21)
-    - opencv2
-    - pandas
-    - csv
-    - tensorflow
-    - PIL
+- **Table Detection**: Utilizes advanced deep learning models to accurately detect tables within images.
+- **OCR**: Leverages PaddleOCR to extract text from detected tables.
+- **Excel Conversion**: Converts extracted table data into Excel format for easy editing and analysis.
+- **User-friendly Interface**: Deployed using Gradio for a simple and interactive user experience.
 
-# Install the required libraries :
+## Installation
 
-    !pip install paddlepaddle
-    !pip install paddleocr
-    !pip install pytesseract transformers ultralyticsplus==0.0.23 ultralytics==8.0.21
+To install TabulaScan, you can use pip:
 
-**If you are using Google Colab Add (Optional)**
+```bash
+pip install TabulaScan
 
-    !wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
-    !sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
-
-
-# Run the algorithm:
-
-    python TabulaScan.py
