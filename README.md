@@ -27,3 +27,6 @@ To install TabulaScan, you can use pip:
 ```bash
 pip install TabulaScan
 
+## Usage
+**Example: Converting an Image to an Excel Table**
+Here’s a simple example demonstrating how to use TabulaScan to convert an image of a table into an Excel file and then read it using Pandas:
